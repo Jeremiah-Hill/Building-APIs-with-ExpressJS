@@ -25,12 +25,12 @@ router.post('/', (req, res) => {
     res.json({ msg: 'new chirp added', test: newChirp });
 });
 
-// POST http:Localhost:3000/api/chirps/123
+// PUT http:Localhost:3000/api/chirps/123
 // { title: string, content: string }
 router.put('/:id', (req, res) => {
     const id = req.params.id;
     const editedChirp = req.body;
-    ChirpStore.UpdateChirp(id, editedTodo);
+    ChirpStore.UpdateChirp(id, editedChirp);
     res.json({ msg: `chirp id ${id} edited`, test: editedChirp});
 });
 
