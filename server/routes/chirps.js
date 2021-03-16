@@ -1,7 +1,6 @@
 const express = require('express');
 const { GetChirps } = require('../utils/chirpstore');
-const chirpstore = require('../utils/chirpstore');
-const ChirpStore = require('../utils/chirpstore')
+const ChirpStore = require('../utils/chirpstore');
 
 const router = express.Router();
 
